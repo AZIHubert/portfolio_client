@@ -1,0 +1,83 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
+    "apollo-upload-client": "^13.0.0",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.10.4",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.27.0",
+    "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-color": "^2.18.1",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-datepicker": "^3.1.3",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.2",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-spring": "^8.0.27",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://allanaoudjiportfolio.herokuapp.com/",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "file-loader": "^5.1.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AZIHubert/portfolio_client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AZIHubert/portfolio_client/issues"
+  },
+  "homepage": "https://github.com/AZIHubert/portfolio_client#readme",
+  "alias": {
+    "#components": "./src/components",
+    "#contexts": "./src/contexts",
+    "#graphql": "./src/graphql",
+    "#hooks": "./src/hooks",
+    "#res": "./src/res",
+    "#shared": "./src/components/shared"
+  }
+}
