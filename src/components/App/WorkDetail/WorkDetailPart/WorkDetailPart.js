@@ -62,7 +62,7 @@ const WorkDetailPart = props => {
                 block={block}
                 key={block._id}
                 position={position()}
-                spacing={(spacing*10)/2}
+                spacing={(spacing*10)}
             />
         })}
     </Grid>

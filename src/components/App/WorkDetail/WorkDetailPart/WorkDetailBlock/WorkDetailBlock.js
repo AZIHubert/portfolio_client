@@ -8,8 +8,16 @@ import WorkDetailContent from './WorkDetailContent';
 
 const useStyles = makeStyles(theme => ({
     container: {
-        paddingLeft: props => (props.position.includes('middle') || props.position.includes('last')) ? props.spacing : 0,
-        paddingRight: props => (props.position.includes('first') || props.position.includes('middle')) ? props.spacing : 0,
+        paddingLeft: props => {
+            if(props.position.includes('last')) return props.spacing * 2 / 3;
+            if(props.position.includes('middle')) return props.spacing / 3;
+            return 0
+        },
+        paddingRight: props => {
+            if(props.position.includes('first')) return props.spacing * 2 / 3;
+            if(props.position.includes('middle')) return props.spacing / 3;
+            return 0;
+        },
         [theme.breakpoints.down('sm')]: {
             paddingLeft: () => 0,
             paddingRight: () => 0,
